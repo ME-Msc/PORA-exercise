@@ -1,0 +1,39 @@
+[project]
+name = "pora-exercise"
+version = "0.1.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "cvxpy",
+    "equinox",
+    "gymnasium[box2d]",
+    "ipykernel",
+    "ipywidgets",
+    "jax",
+    "jupyter",
+    "matplotlib",
+    "numpy",
+    "open3d",
+    "opencv-python",
+    "optax",
+    "pyvirtualdisplay",
+    "scikit-learn",
+    "scipy",
+    "seaborn",
+    "shapely",
+    "torch",
+    "torchvision",
+    "tqdm",
+    "ultralytics",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+torchvision = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

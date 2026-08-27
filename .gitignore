@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+.env
+.DS_Store
+.vscode/
+.idea/
+.agents/
+.codex/
+
+lunar_lander_outputs/
+cartpole_outputs/
+**/cifar-10-batches-py/
+**/cifar-10-python.tar.gz
+runs/
